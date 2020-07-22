@@ -4,6 +4,15 @@ namespace BeTheHero.Essential
 {
     public static class Check
     {
+        public static void NotNull<TValue>(TValue value, string paramName)
+            where TValue : class
+        {
+            if (value == null)
+            {
+                throw new ArgumentNullException(paramName);
+            }
+        }
+
         public static string GetRequired(string value, string argumentName, string message = null)
         {
             return GetRequired(
@@ -20,6 +29,8 @@ namespace BeTheHero.Essential
             string argumentName,
             string message = null)
         {
+            NotNull(comparison, nameof(comparison));
+
             return comparison(value, expected) ? value : throw InvalidArgument(argumentName, message);
         }
 

@@ -13,5 +13,15 @@ namespace BeTheHero.Essential
             : base(message, argumentName)
         {
         }
+
+        public InvalidArgumentException(string message, Exception innerException)
+            : base(message, innerException)
+        {
+        }
+
+        public InvalidArgumentException()
+            : base()
+        {
+        }
     }
 }

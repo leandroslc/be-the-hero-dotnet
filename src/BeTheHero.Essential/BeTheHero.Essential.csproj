@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Id>BeTheHero</Id>
-    <Title>Be The Hero (Core)</Title>
+    <Id>BeTheHero.Essential</Id>
+    <Title>Be The Hero (Essential)</Title>
     <TargetFramework>netstandard2.1</TargetFramework>
   </PropertyGroup>
 
@@ -11,10 +11,6 @@
 
   <ItemGroup>
     <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\BeTheHero.Essential\BeTheHero.Essential.csproj" />
   </ItemGroup>
 
 </Project>
