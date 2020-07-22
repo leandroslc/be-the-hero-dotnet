@@ -1,7 +1,9 @@
 <Project>
 
   <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName Condition="'$(Id)' != ''">$(Id)</AssemblyName>
+    <NoWarn>$(NoWarn),1573,1591,1712</NoWarn>
   </PropertyGroup>
 
 </Project>
