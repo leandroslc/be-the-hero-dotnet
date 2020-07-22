@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Custom Rulset" Description="Custom Rulset" ToolsVersion="14.0">
+
+
+  <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+
+    <!-- DoNotPassLiteralsAsLocalizedParameters -->
+    <Rule Id="CA1303" Action="Info" />
+  </Rules>
+
+
+  <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">
+
+    <!-- PrefixLocalCallsWithThis -->
+    <Rule Id="SA1101" Action="None" />
+
+    <!-- ParametersMustBeOnSameLineOrSeparateLines -->
+    <Rule Id="SA1117" Action="None" />
+
+    <!-- ParameterMustNotSpanMultipleLines -->
+    <Rule Id="SA1118" Action="None" />
+
+    <!-- ElementsMustBeDocumented -->
+    <Rule Id="SA1600" Action="None" />
+
+    <!-- FileMustHaveHeader -->
+    <Rule Id="SA1633" Action="None" />
+
+    <!-- DoNotPrefixLocalMembersWithThis -->
+    <Rule Id="SX1101" Action="Warning" />
+  </Rules>
+
+</RuleSet>
