@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Id>BeTheHero.Infra</Id>
+    <Title>Be The Hero (Infra)</Title>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <Import Project="../../config/analyzers.targets" />
+  <Import Project="../../config/config.props" />
+
+</Project>

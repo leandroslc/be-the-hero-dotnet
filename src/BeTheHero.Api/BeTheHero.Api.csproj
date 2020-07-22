@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <Id>BeTheHero.Api</Id>
+    <Title>Be The Hero (Web API)</Title>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <Import Project="../../config/analyzers.targets" />
+  <Import Project="../../config/config.props" />
+
+</Project>
