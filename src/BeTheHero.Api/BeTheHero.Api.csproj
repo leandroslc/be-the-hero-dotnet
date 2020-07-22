@@ -9,4 +9,8 @@
   <Import Project="../../config/analyzers.targets" />
   <Import Project="../../config/config.props" />
 
+  <ItemGroup>
+    <ProjectReference Include="..\BeTheHero\BeTheHero.csproj" />
+  </ItemGroup>
+
 </Project>
