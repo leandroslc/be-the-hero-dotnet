@@ -1,5 +1,4 @@
 using System.Threading.Tasks;
-using BeTheHero.Essential;
 using BeTheHero.Essential.Results;
 
 namespace BeTheHero.Organizations
@@ -15,7 +14,7 @@ namespace BeTheHero.Organizations
 
         public async Task<Result> Handle(CreateOrganizationCommand command)
         {
-            Check.NotNull(command, nameof(command));
+            command ??= new CreateOrganizationCommand();
 
             var validationResult = command.Validate();
 
