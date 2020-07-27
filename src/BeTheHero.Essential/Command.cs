@@ -1,10 +1,11 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 using BeTheHero.Essential.Results;
 
 namespace BeTheHero.Essential
 {
-    public abstract class Command
+    public abstract class Command : IValidatableObject
     {
         public CommandValidationResult Validate()
         {
@@ -19,5 +20,11 @@ namespace BeTheHero.Essential
 
             return new CommandValidationResult(ok, errors);
         }
+
+        IEnumerable<ValidationResult> IValidatableObject.Validate(ValidationContext context)
+            => GetValidations(context);
+
+        protected virtual IEnumerable<ValidationResult> GetValidations(ValidationContext context)
+            => Enumerable.Empty<ValidationResult>();
     }
 }
