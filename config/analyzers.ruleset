@@ -5,7 +5,7 @@
   <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
 
     <!-- Do Not Pass Literals As Localized Parameters -->
-    <Rule Id="CA1303" Action="Info" />
+    <Rule Id="CA1303" Action="None" />
 
     <!-- Do not directly await a Task -->
     <Rule Id="CA2007" Action="None" />
