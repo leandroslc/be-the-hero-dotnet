@@ -9,4 +9,13 @@
   <Import Project="../../config/analyzers.targets" />
   <Import Project="../../config/config.props" />
 
+  <ItemGroup>
+    <PackageReference Include="Serilog.AspNetCore" Version="3.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BeTheHero\BeTheHero.csproj" />
+    <ProjectReference Include="..\BeTheHero.Infra\BeTheHero.Infra.csproj" />
+  </ItemGroup>
+
 </Project>
