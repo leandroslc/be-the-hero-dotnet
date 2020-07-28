@@ -1,4 +1,5 @@
 using System.Threading.Tasks;
+using BeTheHero.Essential;
 using BeTheHero.Essential.Results;
 
 namespace BeTheHero.Core.Organizations
@@ -6,10 +7,14 @@ namespace BeTheHero.Core.Organizations
     public class OrganizationService
     {
         private readonly IOrganizationRepository repository;
+        private readonly IUnitOfWork unitOfWork;
 
-        public OrganizationService(IOrganizationRepository repository)
+        public OrganizationService(
+            IOrganizationRepository repository,
+            IUnitOfWork unitOfWork)
         {
             this.repository = repository;
+            this.unitOfWork = unitOfWork;
         }
 
         public async Task<Result> Handle(CreateOrganizationCommand command)
@@ -32,6 +37,7 @@ namespace BeTheHero.Core.Organizations
                 city);
 
             await repository.Insert(organization);
+            await unitOfWork.Commit();
 
             return new CreatedResult(new { organization.Id });
         }
