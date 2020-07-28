@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
 using BeTheHero.Essential.Results;
 
-namespace BeTheHero.Organizations
+namespace BeTheHero.Core.Organizations
 {
     public class OrganizationService
     {

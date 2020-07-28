@@ -1,6 +1,6 @@
 using BeTheHero.Essential;
 
-namespace BeTheHero.Organizations
+namespace BeTheHero.Core.Organizations
 {
     public sealed class City
     {

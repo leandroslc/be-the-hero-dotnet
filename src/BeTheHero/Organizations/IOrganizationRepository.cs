@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace BeTheHero.Organizations
+namespace BeTheHero.Core.Organizations
 {
     public interface IOrganizationRepository
     {

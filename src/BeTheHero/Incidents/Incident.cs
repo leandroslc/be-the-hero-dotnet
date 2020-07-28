@@ -1,8 +1,8 @@
 using System;
+using BeTheHero.Core.Organizations;
 using BeTheHero.Essential;
-using BeTheHero.Organizations;
 
-namespace BeTheHero.Incidents
+namespace BeTheHero.Core.Incidents
 {
     public sealed class Incident
     {
