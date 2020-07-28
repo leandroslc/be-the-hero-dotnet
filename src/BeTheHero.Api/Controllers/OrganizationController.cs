@@ -1,4 +1,4 @@
-﻿using System.Threading.Tasks;
+using System.Threading.Tasks;
 using BeTheHero.Core.Organizations;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
